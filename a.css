@@ -15,6 +15,11 @@ hr{
     height:0;
     border:0;
     border-top: 1px solid #DEDEDE;
+}ul,ol{
+    list-style: none;
+}
+h1,h2,h3,h,h5,h6{
+    font-weight: normal;
 }
 .clearfix::after{
     content: '';
@@ -30,6 +35,9 @@ hr{
 }
 .topNavBar-inner {
     padding: 0px 16px 0px 16px;
+}
+ol, ul{
+    list-style: none;
 }
 .topNavBar nav > ul {
     list-style: none;
@@ -81,6 +89,8 @@ hr{
     margin-left: auto;
     margin-right: auto;
     background-color: #FFFFFF;
+    box-shadow: -1px 2px 1px -1px rgba(143,136,143,1);
+    
 }
 .usercard .welcome{
     background: #E6686A;
@@ -151,4 +161,71 @@ hr{
     height: 40px;
     fill: white;
     vertical-align: top;
+}
+body > main{
+    margin-top: -360px;
+}
+body > main .downloadresume{
+    font-size: 14px;
+    line-height: 16px;
+    padding: 21px 55px;
+    border: 1px solid #CDCFD1;
+    background: #EFEFEF;
+    display: inline-block;
+    border-radius: 2px;
+    color: #3d4451;
+    font-weight: bold;
+    margin: 32px;
+}
+body > main .downloadresume:hover{
+    box-shadow: 0px 3px 10px 0px rgba(122,117,122,1);
+    transition: box-shadow 0.5s;           
+}
+.selfIntroduction{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+section.skills{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    box-shadow: -1px 2px 1px -1px rgba(143,136,143,1);
+}
+section.skills > h2{
+    text-align: center;
+    color: #3d4451:
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+section.skills h2{
+    font-size: 14px;
+    line-height: 1.1;
+    padding-right: 40px;
+}
+section.skills > ol{
+    background: white;
+    box-shadow: -1px 2px 1px -1px rgba(143,136,143,1);
+    padding: 42px 50px 10px;
+}
+section.skills > ol > li{
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+section.skills .progressBar{
+    height: 3px;
+    background: #FEE1E1;
+    border-radius: 3px;
+    margin: 4px 0 40px;
+}
+section.skills .progressBar > .progress{
+    height: 100%;
+    background: #E6686A;
+    width: 70%;
+    border-radius: 3px;
 }
